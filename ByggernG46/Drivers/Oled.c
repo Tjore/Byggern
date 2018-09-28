@@ -70,14 +70,15 @@ void oled_clear_line(uint8_t line){
 	oled_goto_line(line);
 	for (int i = 0; i<128; i++){
 		oled_write_data(0);
-		oled_goto_col(0);
 	}
+	oled_goto_col(0);
 }
 
 void oled_cls(void){
 	for (int row = 0; row<8; row++){
 		oled_clear_line(row);
 	}
+	oled_home();
 }
 
 void oled_write_char(char tegn){

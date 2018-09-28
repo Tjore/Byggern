@@ -8,6 +8,8 @@ Drivers\adc.c
 
 Drivers\FontBB.c
 
+Drivers\intro.c
+
 Drivers\menu.c
 
 Drivers\Oled.c

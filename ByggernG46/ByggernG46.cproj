@@ -124,6 +124,12 @@
     <Compile Include="Drivers\FontBB.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Drivers\intro.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Drivers\intro.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Drivers\menu.c">
       <SubType>compile</SubType>
     </Compile>

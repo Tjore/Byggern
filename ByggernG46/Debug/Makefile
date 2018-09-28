@@ -41,6 +41,7 @@ C_SRCS +=  \
 ../ByggernG46.c \
 ../Drivers/adc.c \
 ../Drivers/FontBB.c \
+../Drivers/intro.c \
 ../Drivers/menu.c \
 ../Drivers/Oled.c \
 ../Drivers/SRAM.c \
@@ -58,6 +59,7 @@ OBJS +=  \
 ByggernG46.o \
 Drivers/adc.o \
 Drivers/FontBB.o \
+Drivers/intro.o \
 Drivers/menu.o \
 Drivers/Oled.o \
 Drivers/SRAM.o \
@@ -68,6 +70,7 @@ OBJS_AS_ARGS +=  \
 ByggernG46.o \
 Drivers/adc.o \
 Drivers/FontBB.o \
+Drivers/intro.o \
 Drivers/menu.o \
 Drivers/Oled.o \
 Drivers/SRAM.o \
@@ -78,6 +81,7 @@ C_DEPS +=  \
 ByggernG46.d \
 Drivers/adc.d \
 Drivers/FontBB.d \
+Drivers/intro.d \
 Drivers/menu.d \
 Drivers/Oled.d \
 Drivers/SRAM.d \
@@ -88,6 +92,7 @@ C_DEPS_AS_ARGS +=  \
 ByggernG46.d \
 Drivers/adc.d \
 Drivers/FontBB.d \
+Drivers/intro.d \
 Drivers/menu.d \
 Drivers/Oled.d \
 Drivers/SRAM.d \
@@ -108,6 +113,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

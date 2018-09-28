@@ -14,39 +14,41 @@
 
 
 void start_menu(){
-	//init
-	oled_cls();
-	oled_home();
-	oled_write_string("# ");
-	oled_write_string("Start Game");
-	oled_pos(1,0);
-	oled_write_string("  Hi-Scores");
-	oled_pos(2,0);
-	oled_write_string("  Placeholder");
+
+	char menuLines[4][16] = {"Start Game","Hi-Scores","Placeholder","  "};
+	int8_t menuLinesLength = sizeof(menuLines)/sizeof(menuLines[1]) - 1;
 	
+	oled_cls();
+	drawDoggo(0,4);
+	oled_home();
+	
+	oled_write_string("# ");
+	oled_write_string(menuLines[0]);
+	for(int i=1; i<=menuLinesLength; i++ ){
+		oled_pos(i,0);
+		oled_write_string("  ");
+		oled_write_string(menuLines[i]);
+	}
 	
 	int8_t currentLine = 0;
 	int8_t prevCurrentLine = 0;
 	char *J_dir;
 	
-	printf("%d\r\n",currentLine);
-	
-	char *menuLines = {"Start Game","Hi-Scores","Placeholder"};
 	while(1){
 		J_dir = JoyStick_position();
 		if(J_dir=="DOWN"){
 			currentLine++;
-			_delay_ms(300); //TODO Finne en bedre løsning
+			//_delay_ms(300); //TODO Finne en bedre løsning
 		} else if(J_dir == "UP"){
 			currentLine--;
-			_delay_ms(300); //TODO Finne en bedre løsning
+			//_delay_ms(300); //TODO Finne en bedre løsning
 		}
 		
-		if (currentLine>2){ //TODO Max og min
+		if (currentLine>menuLinesLength){ 
 			currentLine=0;
 		}
-		else if (currentLine<0){ //TODO Max og min
-			currentLine=2;
+		else if (currentLine<0){ 
+			currentLine=menuLinesLength;
 		}
 		
 		if (currentLine != prevCurrentLine){
@@ -58,12 +60,8 @@ void start_menu(){
 			oled_write_string(menuLines[currentLine]);
 
 			prevCurrentLine = currentLine;
-			printf("%d\r\n",currentLine);
+			_delay_ms(300);
 		}
-// 		if (Right_button){
-// 			// gå inn i undermeny
-// 		}
-		//gjør ingenting
 	}
 	
 	
