@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe  -link  -top  address_decoder  -multisrs  E:\byggerng46\brennesak\synwork\address_decoder_comp.srs  -osyn  E:\byggerng46\brennesak\synwork\address_decoder_mult.srs  -log  E:\byggerng46\brennesak\synlog\address_decoder_multi_srs_gen.srr 
+rc:0 success:1
+E:\byggerng46\brennesak\synwork\address_decoder_comp.srs|i|1536931872|1913
+E:\byggerng46\brennesak\synwork\address_decoder_mult.srs|o|1536931874|1866
+E:\byggerng46\brennesak\synlog\address_decoder_multi_srs_gen.srr|o|1536931874|376
+C:\ispLEVER_Classic2_0\synpbase\bin\syn_nfilter.exe|i|1401223936|2741760
+C:\ispLEVER_Classic2_0\synpbase\bin64\syn_nfilter.exe|i|1401224132|6337536

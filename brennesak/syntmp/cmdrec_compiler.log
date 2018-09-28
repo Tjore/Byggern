@@ -1,0 +1,7 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  E:\byggerng46\brennesak\synwork\address_decoder_comp.srs  -top  address_decoder  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  E:\byggerng46\brennesak\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work E:\byggerng46\brennesak\g46.vhd -loga  E:\byggerng46\brennesak\address_decoder.srr 
+rc:0 success:1
+E:\byggerng46\brennesak\synwork\address_decoder_comp.srs|o|1536931872|1913
+E:\byggerng46\brennesak\g46.vhd|i|1536931830|943
+E:\byggerng46\brennesak\address_decoder.srr|o|1536931872|1513
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401223898|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401224104|5533184

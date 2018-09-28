@@ -1,0 +1,33 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file e:/byggerng46/brennesak\address_decoder.prj
+#-- Written on Fri Sep 14 15:31:02 2018
+
+
+#device options
+set_option -technology ispGAL
+
+#compilation/mapping options
+
+#map options
+
+#simulation options
+set_option -write_verilog false
+set_option -write_vhdl false
+
+#timing analysis options
+set_option -synthesis_onoff_pragma false
+
+#-- add_file options
+add_file -vhdl -lib work "g46.vhd"
+
+#-- top module name
+set_option -top_module address_decoder
+
+#-- set result format/file last
+project -result_file "address_decoder.edi"
+
+#-- error message log file
+project -log_file address_decoder.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run
