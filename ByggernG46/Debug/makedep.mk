@@ -14,6 +14,8 @@ Drivers\menu.c
 
 Drivers\Oled.c
 
+Drivers\SPI_driver.c
+
 Drivers\SRAM.c
 
 Drivers\uart.c

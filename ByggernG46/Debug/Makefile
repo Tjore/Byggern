@@ -44,6 +44,7 @@ C_SRCS +=  \
 ../Drivers/intro.c \
 ../Drivers/menu.c \
 ../Drivers/Oled.c \
+../Drivers/SPI_driver.c \
 ../Drivers/SRAM.c \
 ../Drivers/uart.c \
 ../Drivers/USBMFC.c
@@ -62,6 +63,7 @@ Drivers/FontBB.o \
 Drivers/intro.o \
 Drivers/menu.o \
 Drivers/Oled.o \
+Drivers/SPI_driver.o \
 Drivers/SRAM.o \
 Drivers/uart.o \
 Drivers/USBMFC.o
@@ -73,6 +75,7 @@ Drivers/FontBB.o \
 Drivers/intro.o \
 Drivers/menu.o \
 Drivers/Oled.o \
+Drivers/SPI_driver.o \
 Drivers/SRAM.o \
 Drivers/uart.o \
 Drivers/USBMFC.o
@@ -84,6 +87,7 @@ Drivers/FontBB.d \
 Drivers/intro.d \
 Drivers/menu.d \
 Drivers/Oled.d \
+Drivers/SPI_driver.d \
 Drivers/SRAM.d \
 Drivers/uart.d \
 Drivers/USBMFC.d
@@ -95,6 +99,7 @@ Drivers/FontBB.d \
 Drivers/intro.d \
 Drivers/menu.d \
 Drivers/Oled.d \
+Drivers/SPI_driver.d \
 Drivers/SRAM.d \
 Drivers/uart.d \
 Drivers/USBMFC.d
@@ -113,6 +118,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

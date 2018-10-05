@@ -17,6 +17,7 @@
 #include "Drivers/FontBB.h"
 #include "Drivers/menu.h"
 #include "Drivers/intro.h"
+#include "Drivers/SPI_driver.h"
 
 //#define F_CPU 4.9152E6
 #include <util/delay.h>
@@ -38,5 +39,11 @@ int main(void){
 	
 	intro(103,4);
 	_delay_ms(200);
-	start_menu();
+	//start_menu();
+	
+	while(1){
+		//USART_Transmit('G');
+		printf("%d\r\n",100000);
+		_delay_ms(100);
+	}
 }
